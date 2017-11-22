@@ -31,7 +31,7 @@ public class Maps extends AppCompatActivity {
         starMarker.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM);
         map.getOverlays().add(starMarker);
         map.invalidate();
-        starMarker.setIcon(getResources().getDrawable(R.drawable.marker_camera));
+        starMarker.setIcon(getResources().getDrawable(R.drawable.gmbr1));
         starMarker.setTitle("RumahKu");
 
         GeoPoint starPoint1 = new GeoPoint(-5.379532, 105.251695);
@@ -42,7 +42,7 @@ public class Maps extends AppCompatActivity {
         starMarker1.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM);
         map.getOverlays().add(starMarker1);
         map.invalidate();
-        starMarker1.setIcon(getResources().getDrawable(R.drawable.marker_camera));
+        starMarker1.setIcon(getResources().getDrawable(R.drawable.gmbr2));
         starMarker1.setTitle("Universitas Bandar Lampung");
 
         GeoPoint starPoint2 = new GeoPoint(-5.375392, 105.246242);
@@ -53,19 +53,8 @@ public class Maps extends AppCompatActivity {
         starMarker2.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM);
         map.getOverlays().add(starMarker2);
         map.invalidate();
-        starMarker2.setIcon(getResources().getDrawable(R.drawable.marker_camera));
+        starMarker2.setIcon(getResources().getDrawable(R.drawable.gmbr3));
         starMarker2.setTitle("Universitas Bandar Lampung Pascasarjana");
-
-        GeoPoint starPoint3 = new GeoPoint(-5.372220, 105.240891);
-        IMapController mapController3 = map.getController();
-        mapController3.setCenter(starPoint3);
-        Marker starMarker3 = new Marker(map);
-        starMarker3.setPosition(starPoint3);
-        starMarker3.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM);
-        map.getOverlays().add(starMarker3);
-        map.invalidate();
-        starMarker3.setIcon(getResources().getDrawable(R.drawable.marker_camera));
-        starMarker3.setTitle("Museum Lampung");
 
         GeoPoint starPoint4 = new GeoPoint(-5.381785 , 105.259613);
         IMapController mapController4 = map.getController();
@@ -75,7 +64,18 @@ public class Maps extends AppCompatActivity {
         starMarker4.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM);
         map.getOverlays().add(starMarker4);
         map.invalidate();
-        starMarker4.setIcon(getResources().getDrawable(R.drawable.marker_camera));
+        starMarker4.setIcon(getResources().getDrawable(R.drawable.gmbr4));
         starMarker4.setTitle("Mal Boemi Kedaton");
+
+        GeoPoint starPoint3 = new GeoPoint(-5.372220, 105.240891);
+        IMapController mapController3 = map.getController();
+        mapController3.setCenter(starPoint3);
+        Marker starMarker3 = new Marker(map);
+        starMarker3.setPosition(starPoint3);
+        starMarker3.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM);
+        map.getOverlays().add(starMarker3);
+        map.invalidate();
+        starMarker3.setIcon(getResources().getDrawable(R.drawable.gmbr5));
+        starMarker3.setTitle("Museum Lampung");
     }
 }
